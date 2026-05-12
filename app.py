@@ -10,7 +10,7 @@ ARCHIVO_DATOS = "registro_investigacion_unicaldas.csv"
 
 # Crear carpeta de evidencias si no existe
 if not os.path.exists(CARPETA_ANEXOS):
-os.makedirs(CARPETA_ANEXOS)
+    os.makedirs(CARPETA_ANEXOS)  # <--- Esta línea debe tener 4 espacios o un TAB al inicio
 
 # Función para guardar datos en el archivo CSV
 def guardar_datos(dict_datos):
